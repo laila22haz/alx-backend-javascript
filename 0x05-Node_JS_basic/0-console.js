@@ -1,6 +1,6 @@
 // 0-console.js
-function displayMessage(d) {
-  process.stdout.write(`${d}\n`);
+function displayMessage(Args) {
+  console.log(Args);
 }
 
 module.exports = displayMessage;
