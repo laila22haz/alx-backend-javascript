@@ -6,12 +6,10 @@ const Utils = require('./utils');
 
 describe('Test suit', () => {
     it('spy the calculateNumber', () => {
-        var spy_calcul = sinon.spy(Utils, 'calculateNumber');
-        var totalAmount = 100;
-        var totalShipping = 20;
-        sendPaymentRequestToApi(totalAmount, totalShipping);
+        const spy_calcul = sinon.spy(Utils, 'calculateNumber');
+        sendPaymentRequestToApi(100, 20);
         expect(spy_calcul.calledOnce).to.be.true;
-        expect(spy_calcul.calledWith('SUM', 1, 3)).to.be.true;
+        expect(spy_calcul.calledWith('SUM', 100, 20)).to.be.true;
         spy_calcul.restore();
     });
 });
