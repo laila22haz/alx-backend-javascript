@@ -1,8 +1,8 @@
 const sinon = require('sinon');
-const expect = require('chai');
+const { expect } = require('chai');
 const { it, describe } = require('mocha');
-const sendPaymentRequestToApi = require('./3-payment');
-const Utils = require('./utils');
+const sendPaymentRequestToApi = require('./3-payment.js');
+const Utils = require('./utils.js');
 
 describe('Test suit', () => {
     it('spy the calculateNumber', () => {
