@@ -18,7 +18,7 @@ describe('Express app', () => {
     });
     it('test id if it is not number', (done) => {
         request.get('http://localhost:7865/cart/hello', (err, response, body) => {
-            expect(response.statusCode).to.equal(400);
+            expect(response.statusCode).to.equal(404);
             done();
         });
     });
