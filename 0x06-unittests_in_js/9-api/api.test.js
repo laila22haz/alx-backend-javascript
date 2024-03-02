@@ -22,4 +22,4 @@ describe('Express app', () => {
             done();
         });
     });
-})
+});
